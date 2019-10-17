@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="75dp"
+        android:layout_toEndOf="@+id/cajaNombre"
+        android:layout_toRightOf="@+id/cajaNombre"
+        android:gravity="center"
+        android:text="@string/titulo_Modificar_Contacto"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cajaNombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cajaApellido"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cajaNombre"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/apellido"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cajaTelefono"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cajaApellido"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/telefono"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/cajaDireccionPostal"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cajaTelefono"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/direccion_postal"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/cajaFechaNac"
+        android:layout_width="181dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cajaDireccionPostal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="username"
+        android:ems="10"
+        android:hint="@string/fecha_de_nacimiento"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/buttonFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cajaDireccionPostal"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/cajaFechaNac"
+        android:layout_toRightOf="@+id/cajaFechaNac"
+        android:onClick="cambiarFecha"
+        android:text="@string/fecha" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:onClick="altaContacto"
+        android:text="@string/guardar" />
+
+</RelativeLayout>

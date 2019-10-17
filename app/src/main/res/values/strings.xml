@@ -1,0 +1,33 @@
+<resources>
+    //Strings de menu de opciones
+    <string name="app_name">PruebaSQLlite</string>
+    <string name="agregar_contacto">Agregar contacto</string>
+    <string name="eliminar_contacto">Eliminar contacto</string>
+    <string name="buscar_contacto">Buscar contacto</string>
+    <string name="listar_contactos">Listar contactos</string>
+    <string name="consultar_contactos">Contactos cumpleañeros</string>
+    //Strings de Agregar contacto
+    <string name="titulo_agregar_contacto">AGREGAR CONTACTO</string>
+    <string name="titulo_opciones">OPCIONES</string>
+    <string name="fecha_de_nacimiento">Fecha de nacimiento</string>
+    <string name="direccion_postal">Direccion postal</string>
+    <string name="apellido">Apellido</string>
+    <string name="telefono">Telefono</string>
+    <string name="guardar">Guardar</string>
+    <string name="atras">Atras</string>
+    <string name="fecha">Fecha</string>
+    <string name="nombre">Nombre</string>
+    //String de informacion de contacto
+    <string name="boton_eliminar_contacto">Eliminar contacto</string>
+    <string name="imagen_contacto">Imagen contacto</string>
+    <string name="imagen_llamar">Imagen llamar</string>
+    <string name="imagen_modificar">Imagen modificar</string>
+    <string name="boton_salir">Salir</string>
+    //String de buscador de contacto
+    <string name="buscar">Buscar</string>
+    <string name="cajaBuscador">Ingrese nombre o Apellido</string>
+    //String de modificar Contacto
+    <string name="titulo_Modificar_Contacto">Modificar Contacto</string>
+
+
+</resources>
